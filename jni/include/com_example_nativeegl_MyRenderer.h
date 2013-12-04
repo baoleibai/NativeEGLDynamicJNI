@@ -7,15 +7,13 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <math.h>
-#include <MyRenderer.h>
 
 extern "C" {
 #define  LOG_TAG    "libgl_jni"
 #define  LOGI(...)  __android_log_print(ANDROID_LOG_INFO,LOG_TAG,__VA_ARGS__)
 #define  LOGE(...)  __android_log_print(ANDROID_LOG_ERROR,LOG_TAG,__VA_ARGS__)
 #define  LOGD(...)  __android_log_print(ANDROID_LOG_ERROR,LOG_TAG,__VA_ARGS__)
-
-MyRenderer* myRender;
+static const GLfloat PI = 3.1415f;
 
 void printGLString(char* name, GLenum s);
 void init();

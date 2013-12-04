@@ -68,7 +68,7 @@ void nativeSurfaceChanged(JNIEnv *env, jobject obj, jint width, jint height){
 
  void gluPerspective(GLfloat fovy, GLfloat aspect, GLfloat zNear, GLfloat zFar)
  {
-     GLfloat top = zNear * ((GLfloat) tan(fovy * MyRenderer::PI / 360.0));
+     GLfloat top = zNear * ((GLfloat) tan(fovy * PI / 360.0));
      GLfloat bottom = -top;
      GLfloat left = bottom * aspect;
      GLfloat right = top * aspect;

@@ -12,8 +12,8 @@ LOCAL_CPP_EXTENSION := .cpp
 
 LOCAL_LDLIBS += -llog -lGLESv1_CM
 
-LOCAL_SHARED_LIBRARIES := \
-   myegl_impl
+#LOCAL_SHARED_LIBRARIES := \
+ #  myegl_impl
 
 LOCAL_SRC_FILES := \
     com_example_nativeegl_MyRenderer.cpp 
@@ -21,5 +21,5 @@ LOCAL_SRC_FILES := \
 include $(BUILD_SHARED_LIBRARY)
 
 # Use the folloing include to make our test apk.
-include $(call all-makefiles-under,$(LOCAL_PATH))
+#include $(call all-makefiles-under,$(LOCAL_PATH))
 
