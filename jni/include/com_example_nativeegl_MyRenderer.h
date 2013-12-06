@@ -2,11 +2,11 @@
 #include <string.h>
 #include <android/log.h>
 #include <GLES/gl.h>
-#include <GLES/gl.h>
 #include <GLES/glext.h>
 #include <stdio.h>
 #include <stdlib.h>
 #include <math.h>
+//#include <MyRendererNative.h>
 
 extern "C" {
 #define  LOG_TAG    "libgl_jni"

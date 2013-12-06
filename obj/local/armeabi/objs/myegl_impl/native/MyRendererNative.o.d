@@ -1,6 +1,5 @@
-/home/b576/workspace/NativeEGLDynamicJNI/obj/local/armeabi/objs/myegl_impl/MyRenderer.o: \
- /home/b576/workspace/NativeEGLDynamicJNI/jni/natives/MyRenderer.cpp \
- /home/b576/workspace/NativeEGLDynamicJNI/jni/natives/MyRenderer.h \
+obj/local/armeabi/objs/myegl_impl/native/MyRendererNative.o: \
+ jni/native/MyRendererNative.cpp jni/include/MyRendererNative.h \
  /home/b576/disk/borqs/android/android-ndk-r7c/platforms/android-14/arch-arm/usr/include/string.h \
  /home/b576/disk/borqs/android/android-ndk-r7c/platforms/android-14/arch-arm/usr/include/sys/cdefs.h \
  /home/b576/disk/borqs/android/android-ndk-r7c/platforms/android-14/arch-arm/usr/include/sys/cdefs_elf.h \
@@ -34,7 +33,7 @@
  /home/b576/disk/borqs/android/android-ndk-r7c/platforms/android-14/arch-arm/usr/include/machine/limits.h \
  /home/b576/disk/borqs/android/android-ndk-r7c/platforms/android-14/arch-arm/usr/include/sys/syslimits.h
 
-/home/b576/workspace/NativeEGLDynamicJNI/jni/natives/MyRenderer.h:
+jni/include/MyRendererNative.h:
 
 /home/b576/disk/borqs/android/android-ndk-r7c/platforms/android-14/arch-arm/usr/include/string.h:
 
