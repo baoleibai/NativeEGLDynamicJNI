@@ -45,8 +45,8 @@ void nativeSurfaceChanged(JNIEnv *env, jobject obj, jint width, jint height){
  void init() {
  	LOGD("init the renderer");
  	glShadeModel(GL_SMOOTH);
- 	glClearColor(0.0f,0.0f, 0.0f, 0.0f);
- 	glClearDepthf(1.0f);
+ 	glClearColor(0.0f,0.0f, 0.0f, 0.0f);            //set the background color to black when starts to glclear
+ 	glClearDepthf(1.0f);                               //set clear depth buffer bit to 1 when starts to glclear
  	glEnable(GL_DEPTH_TEST);
  	glDepthFunc(GL_LEQUAL);
  	glHint(GL_PERSPECTIVE_CORRECTION_HINT, GL_NICEST);
@@ -77,7 +77,8 @@ void nativeSurfaceChanged(JNIEnv *env, jobject obj, jint width, jint height){
 
  void renderFrame() {
  	LOGD("renderFrame the renderer");
- 	glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT); // 清除屏幕及深度缓存
+ 	// starts to clear the color buffer and depth buffer with the value set in glclearcolor and glcleardepthf
+ 	glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
  	glLoadIdentity();                   // 重置模型观察矩阵
  	glTranslatef(0.0f,0.0f, -6.0f);             // 移入屏幕 6.0
 
@@ -92,7 +93,10 @@ void nativeSurfaceChanged(JNIEnv *env, jobject obj, jint width, jint height){
  	//LOGI("xxxxx");
  	glDisableClientState(GL_VERTEX_ARRAY);
  	glDisableClientState(GL_COLOR_ARRAY);
-     glFlush();
+ 	glFlush();              //force the OpenGL commands set above to execute
+
+ 	//force the OpenGL commands set above to execute. It will block the thread until above commands executed and returned.
+ 	//glFinish();
  }
 
  void printGLString(char* name, GLenum s) {

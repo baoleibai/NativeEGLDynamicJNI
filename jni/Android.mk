@@ -17,11 +17,12 @@ LOCAL_SHARED_LIBRARIES += libcutils libutils
 LOCAL_C_INCLUDES := \
 		$(LOCAL_PATH)/include 
 LOCAL_SRC_FILES := \
-		native/MyRendererNative.cpp
+		MyRendererNative.cpp
 
 LOCAL_CFLAGS:= -DLOG_TAG=\"MyRender\"
 
-include $(BUILD_SHARED_LIBRARY)
+#include $(BUILD_SHARED_LIBRARY)
+include $(BUILD_STATIC_LIBRARY)
 
 #========================
 
@@ -38,6 +39,7 @@ LOCAL_CPP_EXTENSION := .cpp
 LOCAL_LDLIBS += -llog -lGLESv1_CM
 
 #LOCAL_SHARED_LIBRARIES += libmyegl_impl  
+LOCAL_STATIC_LIBRARIES := libmyegl_impl
 
 LOCAL_SRC_FILES := \
     com_example_nativeegl_MyRenderer.cpp 
