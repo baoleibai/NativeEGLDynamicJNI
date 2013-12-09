@@ -21,7 +21,6 @@ LOCAL_SRC_FILES := \
 
 LOCAL_CFLAGS:= -DLOG_TAG=\"MyRender\"
 
-#include $(BUILD_SHARED_LIBRARY)
 include $(BUILD_STATIC_LIBRARY)
 
 #========================

@@ -31,7 +31,8 @@ obj/local/armeabi/objs/myegl_impl/MyRendererNative.o: \
  /home/b576/disk/borqs/android/android-ndk-r7c/platforms/android-14/arch-arm/usr/include/linux/limits.h \
  /home/b576/disk/borqs/android/android-ndk-r7c/platforms/android-14/arch-arm/usr/include/machine/internal_types.h \
  /home/b576/disk/borqs/android/android-ndk-r7c/platforms/android-14/arch-arm/usr/include/machine/limits.h \
- /home/b576/disk/borqs/android/android-ndk-r7c/platforms/android-14/arch-arm/usr/include/sys/syslimits.h
+ /home/b576/disk/borqs/android/android-ndk-r7c/platforms/android-14/arch-arm/usr/include/sys/syslimits.h \
+ /home/b576/disk/borqs/android/android-ndk-r7c/platforms/android-14/arch-arm/usr/include/android/log.h
 
 jni/include/MyRendererNative.h:
 
@@ -98,3 +99,5 @@ jni/include/MyRendererNative.h:
 /home/b576/disk/borqs/android/android-ndk-r7c/platforms/android-14/arch-arm/usr/include/machine/limits.h:
 
 /home/b576/disk/borqs/android/android-ndk-r7c/platforms/android-14/arch-arm/usr/include/sys/syslimits.h:
+
+/home/b576/disk/borqs/android/android-ndk-r7c/platforms/android-14/arch-arm/usr/include/android/log.h:
